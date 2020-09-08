@@ -22,7 +22,6 @@ ActiveRecord::Schema.define(version: 2020_09_08_165358) do
 
   create_table "gears", force: :cascade do |t|
     t.string "name"
-    t.text "description"
     t.string "image"
     t.string "url"
     t.float "weight"
