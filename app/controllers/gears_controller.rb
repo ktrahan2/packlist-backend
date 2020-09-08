@@ -13,7 +13,6 @@ class GearsController < ApplicationController
     def create
         @gear = Gear.create(
             name: params[:name],
-            description: params[:description],
             image: params[:image],
             url: params[:url],
             weight: params[:weight]
@@ -26,7 +25,6 @@ class GearsController < ApplicationController
 
         @gear.update(
             name: params[:name],
-            description: params[:description],
             image: params[:image],
             url: params[:url],
             weight: params[:weight]
