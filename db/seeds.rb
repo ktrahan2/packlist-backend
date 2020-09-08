@@ -5,3 +5,4 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+Activity.create(name: "Mountain Yoga", description: "Doing yoga on a mountain", image: "URL")
