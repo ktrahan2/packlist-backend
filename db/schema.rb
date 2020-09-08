@@ -26,6 +26,7 @@ ActiveRecord::Schema.define(version: 2020_09_08_165358) do
     t.string "image"
     t.string "url"
     t.float "weight"
+    t.string "category"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

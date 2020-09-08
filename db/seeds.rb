@@ -307,5 +307,3 @@ Packing_List.create(activity: mtn_biking, gear: harness)
 Packing_List.create(activity: mtn_biking, gear: belay_device)
 Packing_List.create(activity: mtn_biking, gear: belay_gloves)
 Packing_List.create(activity: mtn_biking, gear: helmet_bike)
-
-

@@ -6,6 +6,7 @@ class CreateGears < ActiveRecord::Migration[6.0]
       t.string :image
       t.string :url
       t.float :weight
+      t.string :category
 
       t.timestamps
     end
