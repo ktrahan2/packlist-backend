@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_09_08_165358) do
+ActiveRecord::Schema.define(version: 2020_09_09_205606) do
 
   create_table "activities", force: :cascade do |t|
     t.string "name"
@@ -40,4 +40,24 @@ ActiveRecord::Schema.define(version: 2020_09_08_165358) do
     t.index ["gear_id"], name: "index_packing_lists_on_gear_id"
   end
 
+  create_table "user_packs", force: :cascade do |t|
+    t.integer "user_id", null: false
+    t.integer "gear_id", null: false
+    t.string "list_name"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["gear_id"], name: "index_user_packs_on_gear_id"
+    t.index ["user_id"], name: "index_user_packs_on_user_id"
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.string "name"
+    t.string "password"
+    t.string "username"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  add_foreign_key "user_packs", "gears"
+  add_foreign_key "user_packs", "users"
 end
