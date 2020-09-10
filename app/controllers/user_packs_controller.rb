@@ -16,10 +16,10 @@ class UserPacksController < ApplicationController
             list_name: params[:list_name]
         )
 
-        render json: @pack
+        redirect_to "http://localhost:3001/profile.html?user_id=#{params[:user_id]}"
     end
 
-    def delete
+    def destroy
         @pack = UserPack.find(params[:id])
         @pack.destroy
 
