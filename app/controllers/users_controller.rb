@@ -14,7 +14,7 @@ class UsersController < ApplicationController
 
         if @user.valid?
             @user.save
-            redirect_to 'http://localhost:3001/home.html?user_id=#{@user.id}'
+            redirect_to "http://localhost:3001/home.html?user_id=#{@user.id}"
         else
             redirect_to 'http://localhost:3001'
         end
@@ -38,10 +38,19 @@ class UsersController < ApplicationController
         )
     
         if @user
-            redirect_to 'http://localhost:3001/home.html?user_id=#{@user.id}'
+            redirect_to "http://localhost:3001/home.html?user_id=#{@user.id}"
         else
             redirect_to 'http://localhost:3001'
         end
     end
+
+    def profile
+        @user = User.find_by(
+            id: params[:user_id]
+            )
+
+        redirect_to "http://localhost:3001/profile.html?user_id=#{@user.id}"
+    end
+
 
 end
