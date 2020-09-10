@@ -1,0 +1,2 @@
+class SelectedGearsController < ApplicationController
+end

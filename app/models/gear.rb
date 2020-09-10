@@ -1,6 +1,6 @@
 class Gear < ApplicationRecord
-    has_many :packing_lists
-    has_many :activities, through: :packing_lists
-    has_many :user_packs
-    has_many :users, through: :user_packs
+    has_many :default_lists
+    has_many :activities, through: :default_lists
+    has_many :selected_gear
+    has_many :packs, through: :selected_gear
 end

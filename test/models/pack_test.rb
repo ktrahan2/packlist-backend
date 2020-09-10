@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class UserPackTest < ActiveSupport::TestCase
+class PackTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end

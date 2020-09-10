@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class PackingListsControllerTest < ActionDispatch::IntegrationTest
+class SelectedGearsControllerTest < ActionDispatch::IntegrationTest
   # test "the truth" do
   #   assert true
   # end

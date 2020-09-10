@@ -1,0 +1,2 @@
+class DefaultListsController < ApplicationController
+end

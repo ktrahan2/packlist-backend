@@ -2,12 +2,12 @@ class GearsController < ApplicationController
   
     def show 
         @gear = Gear.find(params[:id])
-        render json: @gear, include: [:packing_lists, :activities]
+        render json: @gear, include: [:default_lists, :activities]
     end
         
     def index
         @gears = Gear.all
-        render json: @gears, include: [:packing_lists, :activities]
+        render json: @gears, include: [:default_lists, :activities]
     end 
 
     def create
