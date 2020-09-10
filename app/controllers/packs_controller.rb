@@ -36,9 +36,10 @@ class PacksController < ApplicationController
 
     def destroy
         @pack = Pack.find(params[:id])
+        SelectedGear.destroy_all
         @pack.destroy
 
-        redirect_to 'http://localhost:3001/profile.html?user_id=#{@pack.user_id}'
+        redirect_to "http://localhost:3001/profile.html?user_id=#{@pack.user_id}"
     end
 
 end
