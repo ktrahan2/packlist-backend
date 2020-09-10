@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class PackingListTest < ActiveSupport::TestCase
+class DefaultListsControllerTest < ActionDispatch::IntegrationTest
   # test "the truth" do
   #   assert true
   # end

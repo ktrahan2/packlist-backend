@@ -1,4 +1,4 @@
 class Activity < ApplicationRecord
-    has_many :packing_lists
-    has_many :gears, through: :packing_lists
+    has_many :default_lists
+    has_many :gears, through: :default_lists
 end

@@ -2,10 +2,8 @@
 
 one:
   user: one
-  gear: one
-  list_name: MyString
+  name: MyString
 
 two:
   user: two
-  gear: two
-  list_name: MyString
+  name: MyString

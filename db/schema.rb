@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_09_09_205606) do
+ActiveRecord::Schema.define(version: 2020_09_10_165247) do
 
   create_table "activities", force: :cascade do |t|
     t.string "name"
@@ -18,6 +18,15 @@ ActiveRecord::Schema.define(version: 2020_09_09_205606) do
     t.string "image"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "default_lists", force: :cascade do |t|
+    t.integer "activity_id", null: false
+    t.integer "gear_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["activity_id"], name: "index_default_lists_on_activity_id"
+    t.index ["gear_id"], name: "index_default_lists_on_gear_id"
   end
 
   create_table "gears", force: :cascade do |t|
@@ -31,23 +40,21 @@ ActiveRecord::Schema.define(version: 2020_09_09_205606) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  create_table "packing_lists", force: :cascade do |t|
-    t.integer "activity_id"
-    t.integer "gear_id"
+  create_table "packs", force: :cascade do |t|
+    t.integer "user_id", null: false
+    t.string "name"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["activity_id"], name: "index_packing_lists_on_activity_id"
-    t.index ["gear_id"], name: "index_packing_lists_on_gear_id"
+    t.index ["user_id"], name: "index_packs_on_user_id"
   end
 
-  create_table "user_packs", force: :cascade do |t|
-    t.integer "user_id", null: false
+  create_table "selected_gears", force: :cascade do |t|
+    t.integer "pack_id", null: false
     t.integer "gear_id", null: false
-    t.string "list_name"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["gear_id"], name: "index_user_packs_on_gear_id"
-    t.index ["user_id"], name: "index_user_packs_on_user_id"
+    t.index ["gear_id"], name: "index_selected_gears_on_gear_id"
+    t.index ["pack_id"], name: "index_selected_gears_on_pack_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -58,6 +65,9 @@ ActiveRecord::Schema.define(version: 2020_09_09_205606) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  add_foreign_key "user_packs", "gears"
-  add_foreign_key "user_packs", "users"
+  add_foreign_key "default_lists", "activities"
+  add_foreign_key "default_lists", "gears"
+  add_foreign_key "packs", "users"
+  add_foreign_key "selected_gears", "gears"
+  add_foreign_key "selected_gears", "packs"
 end

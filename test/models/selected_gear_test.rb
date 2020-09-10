@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class UserPacksControllerTest < ActionDispatch::IntegrationTest
+class SelectedGearTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end

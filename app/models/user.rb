@@ -1,6 +1,4 @@
 class User < ApplicationRecord
-    has_many :user_packs
-    has_many :gears, through: :user_packs
-
-    validates :username, uniqueness: true
+    has_many :packs
+    has_many :selected_gears, through: :packs
 end
