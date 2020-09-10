@@ -45,9 +45,7 @@ class UsersController < ApplicationController
     end
 
     def profile
-        @user = User.find_by(
-            id: params[:user_id]
-            )
+        @user = User.find(params[:user_id])
 
         redirect_to "http://localhost:3001/profile.html?user_id=#{@user.id}"
     end
