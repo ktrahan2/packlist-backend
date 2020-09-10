@@ -21,7 +21,7 @@ class PacksController < ApplicationController
                 gear_id: gear_id
             )
         end
-        redirect_to 'http://localhost:3001/profile.html?user_id=#{params[:user_id]}'
+        redirect_to "http://localhost:3001/profile.html?user_id=#{@pack.user_id}"
     end
 
     def update
@@ -31,7 +31,7 @@ class PacksController < ApplicationController
             name: params[:name]
         })
 
-        redirect_to 'http://localhost:3001/profile.html?user_id=#{@pack.user_id}'
+        redirect_to "http://localhost:3001/profile.html?user_id=#{@pack.user_id}"
     end
 
     def destroy
