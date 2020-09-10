@@ -53,7 +53,7 @@ class UsersController < ApplicationController
     def home
         @user = User.find(params[:user_id])
 
-        redirect_to "http://localhost:3001/home.html?user_id?#{@user.id}"
+        redirect_to "http://localhost:3001/home.html?user_id=#{@user.id}"
     end
 
 end
