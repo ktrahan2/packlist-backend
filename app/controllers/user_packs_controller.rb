@@ -1,12 +1,12 @@
 class UserPacksController < ApplicationController
     def index
         @packs = UserPack.all
-        render json: @packs
+        render json: @packs, include: [:gear]
     end
 
     def show
         @pack = UserPack.find(params[:id])
-        render json: @pack
+        render json: @pack, include: [:gear]
     end
 
     def create
