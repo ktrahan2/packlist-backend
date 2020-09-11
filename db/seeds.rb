@@ -1,10 +1,5 @@
 # This file should contain all the record creation needed to seed the database with its default values.
 # The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
 
 Pack.destroy_all
 DefaultList.destroy_all
@@ -170,7 +165,6 @@ DefaultList.create(activity: backpack, gear: dinner)
 DefaultList.create(activity: dayhike, gear: bladder)
 DefaultList.create(activity: dayhike, gear: knife)
 DefaultList.create(activity: dayhike, gear: headlamp)
-DefaultList.create(activity: dayhike, gear: batteries)
 DefaultList.create(activity: dayhike, gear: sunglasses)
 DefaultList.create(activity: dayhike, gear: sunscreen)
 DefaultList.create(activity: dayhike, gear: hat)
@@ -195,7 +189,6 @@ DefaultList.create(activity: dayhike, gear: cash)
 DefaultList.create(activity: dayhike, gear: snacks)
 
 # BACKCOUNTRY SKI LIST SEEDS
-DefaultList.create(activity: backcountry_ski, gear: water)
 DefaultList.create(activity: backcountry_ski, gear: water_bottle)
 DefaultList.create(activity: backcountry_ski, gear: bladder)
 DefaultList.create(activity: backcountry_ski, gear: knife)
@@ -222,7 +215,6 @@ DefaultList.create(activity: backcountry_ski, gear: first_aid_mini)
 DefaultList.create(activity: backcountry_ski, gear: snacks)
 DefaultList.create(activity: backcountry_ski, gear: breakfast)
 DefaultList.create(activity: backcountry_ski, gear: lunch)
-DefaultList.create(activity: backcountry_ski, gear: dinner)
 DefaultList.create(activity: backcountry_ski, gear: skis)
 DefaultList.create(activity: backcountry_ski, gear: ski_boots)
 DefaultList.create(activity: backcountry_ski, gear: skins)
@@ -291,7 +283,6 @@ DefaultList.create(activity: hut, gear: ski_poles)
 DefaultList.create(activity: yoga, gear: water_bottle)
 DefaultList.create(activity: yoga, gear: sunglasses)
 DefaultList.create(activity: yoga, gear: sunscreen)
-DefaultList.create(activity: yoga, gear: hat)
 DefaultList.create(activity: yoga, gear: waterproof_jacket)
 DefaultList.create(activity: yoga, gear: shorts)
 DefaultList.create(activity: yoga, gear: tshirt)
@@ -344,8 +335,4 @@ DefaultList.create(activity: mtn_biking, gear: bike_shoes)
 DefaultList.create(activity: mtn_biking, gear: daypack)
 DefaultList.create(activity: mtn_biking, gear: snacks)
 DefaultList.create(activity: mtn_biking, gear: lunch)
-DefaultList.create(activity: mtn_biking, gear: rope)
-DefaultList.create(activity: mtn_biking, gear: harness)
-DefaultList.create(activity: mtn_biking, gear: belay_device)
-DefaultList.create(activity: mtn_biking, gear: belay_gloves)
 DefaultList.create(activity: mtn_biking, gear: helmet_bike)
