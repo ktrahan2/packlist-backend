@@ -70,16 +70,24 @@ Gear up is a web application that allows the user to register and then browse th
 
 First you must run
 
-    ``` bundle install ```
+``` 
+     bundle install 
+```
 
 Then
 
-    ``` rails db:migrate ```
-    ``` rails db:seed ```
+``` 
+     rails db:migrate 
+```
+``` 
+     rails db:seed 
+ ```
 
 To start the server run
 
-    ``` rails s -p 3500 ```
+```
+    rails s -p 3500 
+```
 
 ## Main Features
 
