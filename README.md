@@ -20,7 +20,7 @@ Gear up is a web application that allows the user to register and then browse th
 ## Gifs
 ![Seeds](https://media.giphy.com/media/J1QcLazM3SIb7CgZbG/giphy.gif)
 ![Schema](https://media.giphy.com/media/IhDIM46ARwOR08dfPi/giphy.gif)
-![User Controller](Button Methods.jpg)
+![Button Method](./buttonmethods.jpg)
 
 
 ## Example Code 
