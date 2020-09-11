@@ -22,13 +22,12 @@ class UsersController < ApplicationController
 
     def update
         @user = User.find(params[:id])
+
         @user.update(
-            name: params[:name],
-            username: params[:username],
             password: params[:password]
         )
-
-        redirect_to 'http://localhost:3001/profile?user_id=#{@user.id}'
+       
+        redirect_to "http://localhost:3001/profile.html?user_id=#{@user.id}"
     end
 
     def login
