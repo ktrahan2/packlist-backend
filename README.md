@@ -15,14 +15,29 @@ An app for finding recommended packing list for outdoor adventures!
 
 ## Description
 
-Gear up is a web application that allows the user to register and then browse through different outdoor activities. While browsing these activites the user is able to select and modify a recommended packing list for the specific activity they are doing. After selecting a packing list the user can go to their profile page and see their saved list and make changes to their saved packs. 
+Gear up is a web application that allows the user to register and then browse through packing lists for different outdoor activities. While browsing these activites the user is able to select and modify a recommended packing list for the specific activity they are doing. After selecting a packing list the user can go to their profile page and see their saved list and make changes to their saved packs. 
 
 ## Gifs
+
+### Seeds
+
 ![Seeds](https://media.giphy.com/media/J1QcLazM3SIb7CgZbG/giphy.gif)
+
+### Schema for all 6 models
+
 ![Schema](https://media.giphy.com/media/IhDIM46ARwOR08dfPi/giphy.gif)
-[Create](https://imgur.com/ypaEXH4)
-[Login Method](https://imgur.com/gg0UiZ2)
-[Button Methods](https://imgur.com/OVrbnoP)
+
+### Create User Method with Validation
+
+![Create](https://i.imgur.com/ypaEXH4.jpg)
+
+### Login Method
+
+![Login Method](https://i.imgur.com/gg0UiZ2.jpeg)
+
+### Reroute methods used on HTML buttons
+
+![Button Methods](https://i.imgur.com/ypaEXH4.jpg)
 
 
 ## Example Code 
