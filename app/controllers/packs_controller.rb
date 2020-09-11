@@ -14,13 +14,14 @@ class PacksController < ApplicationController
             user_id: params[:user_id],
             name: params[:name]
         )
-
-        params[:gear_ids].each do |gear_id|
-            SelectedGear.create(
+        
+            params[:gear_ids].each do |gear_id|
+                SelectedGear.create(
                 pack_id: @pack.id,
                 gear_id: gear_id
-            )
-        end
+                )
+            end
+                   
         redirect_to "http://localhost:3001/profile.html?user_id=#{@pack.user_id}"
     end
 

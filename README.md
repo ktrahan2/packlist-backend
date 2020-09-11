@@ -19,6 +19,7 @@ Gear up is a web application that allows the user to register and then browse th
 
 ## Gifs/video
 
+
 ## Example Code 
 
 ```
