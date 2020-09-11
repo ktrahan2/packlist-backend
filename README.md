@@ -3,14 +3,14 @@
 An app for finding recommended packing list for outdoor adventures!
 
 # Table Of Contents 
-- [Description]()
-- [Gifs]()
-- [Example Code]()
-- [Technology Used]()
-- [Setting up for the Application]()
-- [Main Features]()
-- [Features in Progress]()
-- [Contact Information]()
+- [Description](https://github.com/ktrahan2/packlist-backend#description)
+- [Gifs](https://github.com/ktrahan2/packlist-backend#gifsvideo)
+- [Example Code](https://github.com/ktrahan2/packlist-backend#example-code)
+- [Technology Used](https://github.com/ktrahan2/packlist-backend#technology-used)
+- [Setting up for the Application](https://github.com/ktrahan2/packlist-backend#setting-up-for-the-application)
+- [Main Features](https://github.com/ktrahan2/packlist-backend#main-features)
+- [Features in Progress](https://github.com/ktrahan2/packlist-backend#features-in-progress)
+- [Contact Information](https://github.com/ktrahan2/packlist-backend#contact-information)
 
 ## Description
 
