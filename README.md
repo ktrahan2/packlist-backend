@@ -121,7 +121,7 @@ To start the server run
 
 ## Contact Information
 
-Created by [Shelley Brooke](https://www.linkedin.com/in/sbrook13/) and [Kyle Trahan](https://www.linkedin.com/in/kyle-trahan-8384678b/)
+Created by [Shelley Brook](https://www.linkedin.com/in/sbrook13/) and [Kyle Trahan](https://www.linkedin.com/in/kyle-trahan-8384678b/)
 
 ## Link to Frontend Repo
 
