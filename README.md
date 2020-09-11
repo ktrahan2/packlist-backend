@@ -11,7 +11,7 @@ An app for finding recommended packing list for outdoor adventures!
 - [Main Features](https://github.com/ktrahan2/packlist-backend#main-features)
 - [Features in Progress](https://github.com/ktrahan2/packlist-backend#features-in-progress)
 - [Contact Information](https://github.com/ktrahan2/packlist-backend#contact-information)
-- [Link to Frontend Repo](https://github.com/sbrook13/packlist-backend#link-to-backend-repo))
+- [Link to Frontend Repo](https://github.com/sbrook13/packlist-backend#link-to-backend-repo)
 
 ## Description
 
