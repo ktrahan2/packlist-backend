@@ -22,6 +22,7 @@ Gear up is a web application that allows the user to register and then browse th
 ![Schema](https://media.giphy.com/media/IhDIM46ARwOR08dfPi/giphy.gif)
 ![Button Method](Button Methods.jpg)
 ![create](/Create.jpg)
+![Login](packlist-backend/Login Method.jpeg)
 
 
 ## Example Code 
