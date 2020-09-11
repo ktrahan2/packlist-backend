@@ -19,7 +19,7 @@ Gear up is a web application that allows the user to register and then browse th
 
 ## Gifs
 
-### Seeds
+### Seeds for gear, activity, and suggested packing lists
 
 ![Seeds](https://media.giphy.com/media/J1QcLazM3SIb7CgZbG/giphy.gif)
 
